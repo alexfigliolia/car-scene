@@ -1,0 +1,64 @@
+{
+  "ts-node": {
+    "swc": true,
+    "typeCheck": false
+  },
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "Components/*": [
+        "./Components/*"
+      ],
+      "Declarations/*": [
+        "./Declarations/*"
+      ],
+      "Hooks/*": [
+        "./Hooks/*"
+      ],
+      "Root/*": [
+        "./Root/*"
+      ],
+      "Tools/*": [
+        "./Tools/*"
+      ],
+      "Types/*": [
+        "./Types/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "ci",
+    "cd",
+    "eslint.config.mjs",
+    ".prettierrc.mjs",
+    "**/*.json",
+    "**/*.ts*",
+    "**/*.js*"
+  ],
+  "exclude": [
+    "__Stealth__",
+    "coverage",
+    "dist",
+    "node_modules"
+  ]
+}
